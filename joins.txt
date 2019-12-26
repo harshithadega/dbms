@@ -1,0 +1,124 @@
+select d.deptno,d.dname,e.deptno from dept d left outer join emp e on d.deptno=e.deptno;
+
+    DEPTNO DNAME              DEPTNO
+---------- -------------- ----------
+        10 ACCOUNTING             10
+        10 ACCOUNTING             10
+        10 ACCOUNTING             10
+        20 RESEARCH               20
+        20 RESEARCH               20
+        20 RESEARCH               20
+        20 RESEARCH               20
+        20 RESEARCH               20
+        30 SALES                  30
+        30 SALES                  30
+        30 SALES                  30
+
+    DEPTNO DNAME              DEPTNO
+---------- -------------- ----------
+        30 SALES                  30
+        30 SALES                  30
+        30 SALES                  30
+        40 OPERATIONS
+
+15 rows selected.
+select d.deptno,d.dname,e.deptno from dept d right outer join emp e on d.deptno=e.deptno;
+
+    DEPTNO DNAME              DEPTNO
+---------- -------------- ----------
+        10 ACCOUNTING             10
+        10 ACCOUNTING             10
+        10 ACCOUNTING             10
+        20 RESEARCH               20
+        20 RESEARCH               20
+        20 RESEARCH               20
+        20 RESEARCH               20
+        20 RESEARCH               20
+        30 SALES                  30
+        30 SALES                  30
+        30 SALES                  30
+
+    DEPTNO DNAME              DEPTNO
+---------- -------------- ----------
+        30 SALES                  30
+        30 SALES                  30
+        30 SALES                  30
+
+14 rows selected.
+select d.deptno,d.dname,e.deptno from dept d,emp e ;
+
+    DEPTNO DNAME              DEPTNO
+---------- -------------- ----------
+        10 ACCOUNTING             20
+        10 ACCOUNTING             30
+        10 ACCOUNTING             30
+        10 ACCOUNTING             20
+        10 ACCOUNTING             30
+        10 ACCOUNTING             30
+        10 ACCOUNTING             10
+        10 ACCOUNTING             20
+        10 ACCOUNTING             10
+        10 ACCOUNTING             30
+        10 ACCOUNTING             20
+
+    DEPTNO DNAME              DEPTNO
+---------- -------------- ----------
+        10 ACCOUNTING             30
+        10 ACCOUNTING             20
+        10 ACCOUNTING             10
+        20 RESEARCH               20
+        20 RESEARCH               30
+        20 RESEARCH               30
+        20 RESEARCH               20
+        20 RESEARCH               30
+        20 RESEARCH               30
+        20 RESEARCH               10
+        20 RESEARCH               20
+
+    DEPTNO DNAME              DEPTNO
+---------- -------------- ----------
+        20 RESEARCH               10
+        20 RESEARCH               30
+        20 RESEARCH               20
+        20 RESEARCH               30
+        20 RESEARCH               20
+        20 RESEARCH               10
+        30 SALES                  20
+        30 SALES                  30
+        30 SALES                  30
+        30 SALES                  20
+        30 SALES                  30
+
+    DEPTNO DNAME              DEPTNO
+---------- -------------- ----------
+        30 SALES                  30
+        30 SALES                  10
+        30 SALES                  20
+        30 SALES                  10
+        30 SALES                  30
+        30 SALES                  20
+        30 SALES                  30
+        30 SALES                  20
+        30 SALES                  10
+        40 OPERATIONS             20
+        40 OPERATIONS             30
+
+    DEPTNO DNAME              DEPTNO
+---------- -------------- ----------
+        40 OPERATIONS             30
+        40 OPERATIONS             20
+        40 OPERATIONS             30
+        40 OPERATIONS             30
+        40 OPERATIONS             10
+        40 OPERATIONS             20
+        40 OPERATIONS             10
+        40 OPERATIONS             30
+        40 OPERATIONS             20
+        40 OPERATIONS             30
+        40 OPERATIONS             20
+
+    DEPTNO DNAME              DEPTNO
+---------- -------------- ----------
+        40 OPERATIONS             10
+
+56 rows selected.
